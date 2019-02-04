@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>predictes</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <img src=<%=require("./img/logo.png") %> alt="logo" class="header__logo">
+            <img src=<%=require("./img/logo-mobile.png") %> alt="logo-mobile" class="header__logo-mobile">
+
+            <div>
+                <div class="header__contacts">
+                    <div class="header__phone-contact">
+                        <img src=<%=require("./img/phone-icon.png") %> alt="phone-icon">
+                        <a href="tel:+48618908392">+48 618 908 392</a>
+                    </div>
+
+                    <div class="header__mail-contact">
+                        <img src=<%=require("./img/mail-icon.png") %> alt="phone-icon">
+                        <a href="mailto:office@predictes.com">office@predictes.com</a>
+                    </div>
+                </div>
+                <nav class="header__navigation navigation">
+                    <div class="navigation__item">
+                        <a href="#">O FIRMIE</a>
+                        <div class="navigation__dropdown">
+                            <a href="#">O nas</a>
+                            <a href="#">Historia</a>
+                            <a href="#">Zespół</a>
+                        </div>
+                    </div>
+                    <div class="navigation__item"><a href="#">REALIZACJE</a></div>
+                    <div class="navigation__item"><a href="#">BLOG</a></div>
+                    <div class="navigation__item"><a href="#">PARTNERZY</a></div>
+                    <div class="navigation__item"><a href="#">KONTAKT</a></div>
+                </nav>
+            </div>
+
+
+            <div class="burger-icon">
+                <div class="burger-icon__bar1"></div>
+                <div class="burger-icon__bar2"></div>
+                <div class="burger-icon__bar3"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu__overlay"></div>
+    <div class="mobile-menu">
+        <ul>
+            <li class="mobile-menu__item">
+                <a href="#">O FIRMIE</a>
+                <ul class="mobile-menu__submenu">
+                    <li><a href="#">O nas</a></li>
+                    <li><a href="#">Historia</a></li>
+                    <li><a href="#">Zespół</a></li>
+                </ul>
+            </li>
+            <li class="mobile-menu__item"><a href="#">REALIZACJE</a></li>
+            <li class="mobile-menu__item"><a href="#">BLOG</a></li>
+            <li class="mobile-menu__item"><a href="#">PARTNERZY</a></li>
+            <li class="mobile-menu__item"><a href="#">KONTAKT</a></li>
+        </ul>
+
+        <div class="mobile-menu__phone-contact">
+            <img src=<%=require("./img/phone-icon.png") %> alt="phone-icon">
+            <a href="tel:+48618908392">+48 618 908 392</a>
+        </div>
+
+        <div class="mobile-menu__mail-contact">
+            <img src=<%=require("./img/mail-icon.png") %> alt="phone-icon">
+            <a href="mailto:office@predictes.com">office@predictes.com</a>
+        </div>
+    </div>
+</body>
+
+</html>

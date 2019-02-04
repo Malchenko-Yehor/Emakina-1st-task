@@ -1,0 +1,13 @@
+body {
+  background-color: #2b2b2b;
+  background-image: url(../assets/img/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(../assets/img/bg.png);
+  }
+}

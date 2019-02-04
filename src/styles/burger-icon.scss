@@ -1,0 +1,35 @@
+.burger-icon {
+  position: absolute;
+  z-index: 70;
+  right: 10px;
+  top: 25px;
+  cursor: pointer;
+
+  &__bar1,
+  &__bar2,
+  &__bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  &.is-active .burger-icon__bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  &.is-active .burger-icon__bar2 {opacity: 0;}
+  
+  &.is-active .burger-icon__bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .burger-icon {
+    display: none;
+  }
+}
